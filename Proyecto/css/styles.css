@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+    color: black;
+}
+.contenidoHeader{
+    height: 400px;
+    display: flex;
+    background-image: url(/Proyecto/img/portada.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    background-position:center;
+    
+    
+}
+.alineacion{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 60px;
+    margin: 20px 0 0 20px;
+}
+
+.barra{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items:initial;
+    margin:30px 30px 230px 0;
+        
+}
+.item{
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 30px;
+}
+.tituloMain{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+    margin-bottom: 35px;
+    
+}
+main {
+    background-color: khaki;
+}
+
+.flexMain{
+    display: flex;
+    padding: 0 200px 0 200px;
+    justify-content: space-around;
+
+}
+main img {
+    width: 250px;
+    height: 200px;
+}
+.anuncios{
+    width: 250px;
+    
+}
+.boton {   
+    /* Como sacar letas azules del boton?*/
+    padding: 10px;
+    background-color: lightblue;
+    color: black;
+    margin-left: 60px;
+    margin-top: 20px;
+
+}
+.botonA{
+    /*Como alinear el boton sin darle margenes?*/
+    margin: 30px 0 0 580px; 
+    padding: 10px;
+}
+.fondoContacto {
+    width: 100%;
+    height: 500px;
+    background-image: url(/Proyecto/img/contacto.jpg);
+    background-size: 100%;
+}
+.textoContacto{
+    text-align: center;
+    padding-top: 250px;
+}
+.botonB{
+    padding: 10px;
+    background-color:burlywood;
+    text-transform: none;
+    border: 10px;
+}
+.flexSection{
+    display: flex;
+    justify-content: space-between;
+   
+    background-color:khaki;
+    padding:0 200px 0 200px;
+}
+.comentario{
+    background-color:darksalmon;
+    border-radius: 100px;
+    padding: 30px ;
+    
+}
+.segundoSection{
+    margin-top: 40px;
+    height: 250px;
+}
+
+.footer {
+    height: 150px;
+    background-color: brown;
+    text-align: end;
+    padding-top: 100px;
+    padding-right: 50px;
+}
+
+
