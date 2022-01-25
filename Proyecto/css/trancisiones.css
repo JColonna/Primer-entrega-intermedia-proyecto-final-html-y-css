@@ -1,0 +1,109 @@
+body{
+    background-color: grey;
+}
+.lineal{
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(45deg, orange, darkviolet);
+}
+.radial{
+    height: 100px;
+    width: 100px;
+    background-image: radial-gradient(rgb(0, 183, 255), red);
+
+}
+
+.caja {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    transition: all 2s;
+}
+
+.caja:hover{
+    height: 300px;
+    width: 200px;
+    background-color: red;
+}
+.caja1{
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+}
+.mover{
+    transform:translateX(450px) ;/*Eje x primer valor eje y segundo valor*/
+}
+.rotar{
+    transform:rotate(45deg)
+}
+.escalar{
+    transform: scale(2, 0.5);
+}
+.torcer{
+    transform: skew(50deg);
+}
+
+/*Animaciones*/
+.cajaAnimada{
+    animation-name: caja;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+
+
+}
+
+.tituloAnimado{
+    animation-name: titulo;
+    animation-iteration-count: 2;/*Repeticion*/
+    animation-duration:5s ; /*Duracion*/
+
+}
+
+
+/*Keyframes*/
+/*Simple*/
+@keyframes titulo{
+    from /*Inicio*/{
+        /*estilos*/
+        transform: translate(-200px);
+        opacity: 0;
+    }
+    to /*final*/{
+        /*Estilos*/
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+    
+/*Complejo*/
+@keyframes caja{
+    0% /*Inicio*/{
+        border-radius: 50%;
+        background-color: orange;
+        transform: skew(30deg);
+    }
+    20%{
+        border-radius: 50%;
+        transform: rotateY(45deg)
+        ;
+
+    }
+    30%{
+        transform: translateX(100vh);
+    }
+    75%{
+        border-radius: 50%;
+        transform:translateX(75vh);
+        transform:scale(2,3);
+
+    }
+    100%{
+        border-radius: 50%;
+
+    }
+
+}

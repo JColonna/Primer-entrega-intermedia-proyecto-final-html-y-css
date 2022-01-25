@@ -1,0 +1,83 @@
+/*Explicito*/
+
+.aplicandoGrid{
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr;
+    grid-template-rows: 100px 240px;
+    
+}
+.repetitivo{
+    display: grid;
+    grid-template-columns:45%/*primera*/ 2fr/*segunda*/ repeat(9 /*cantidad columnas*/, 2fr/*tamaño columna*/) 10% /*ultima*/;
+    grid-template-rows: repeat(12, 1fr);
+}
+
+div {
+    background-color: orange;
+    /*height: 100px;
+    width: 100px;
+   */
+    margin: 10px;
+}
+span{
+    border: 1px solid black;
+    background-color: blue;
+    padding: 2px;
+    margin: 4px;
+
+}
+span:hover{
+    background-color: brown ;
+}
+
+
+/*GRID POR AREAS*/
+.gridAreas{
+    height: 100vh;
+    display: grid;
+    /* Estructura despues de nombrar areas*/
+    grid-template-areas: 
+    /*3 columnas y 4 filas*/
+    " menu cabeza cabeza"/*Fila 1*/
+    "menu productos pepe"
+    "menu servicios pepe"
+    "menu pie pie "
+    ;
+    grid-template-columns:  15%  auto 30%;
+    grid-template-rows:  1fr 2fr 2fr 1fr   ;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: burlywood;
+}
+
+    /*Generales Area*/
+    .border{
+        border: 1px solid black;
+    }
+    /* Nombrar las areas*/
+    header{
+        grid-area: cabeza;
+    }
+    footer{
+        grid-area: pie;
+    }
+    #productos {
+        grid-area: productos;
+    }
+    #servicios{
+        grid-area: servicios;
+    }
+    nav{
+        grid-area: menu;
+
+    }
+    aside{
+        grid-area: pepe;
+    }
+
+/*Agregando flex a grid*/
+
+.flexMenu{
+    display: flex;
+    flex-direction: column;
+}
