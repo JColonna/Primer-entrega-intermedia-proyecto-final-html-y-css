@@ -120,3 +120,42 @@ main img {
 }
 
 
+.cajaAnimada{
+    animation-name: caja;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;}
+
+
+
+@keyframes caja{
+    0% /*Inicio*/{
+        border-radius: 50%;
+        background-color: orange;
+        transform: skew(30deg);
+    }
+    20%{
+        border-radius: 50%;
+        transform: rotateY(45deg)
+        ;
+
+    }
+    30%{
+        transform: translateX(100vh);
+    }
+    75%{
+        border-radius: 50%;
+        transform:translateX(75vh);
+        
+
+    }
+    100%{
+        border-radius: 50%;
+
+    }
+
+}
+
+
